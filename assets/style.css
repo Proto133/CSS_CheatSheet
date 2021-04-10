@@ -3,6 +3,12 @@ body {
     background-color: darkgray;
 }
 
+main {
+    /* Turns this element into a flexbox */
+    display: flex;
+    margin-top: 2%;
+}
+
 header {
     font-size: 46px;
     text-align: center;
