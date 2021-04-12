@@ -1,38 +1,95 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: darkgray;
-}
-
-main {
-    /* Turns this element into a flexbox */
-    display: flex;
-    margin-top: 2%;
+    background-color: rgb(52, 53, 56);
 }
 
 header {
+    text-align: center;
+}
+
+h1 {
     font-size: 46px;
-    text-align: center;
-    color: violet;
+    color: rgba(232, 102, 236);
 }
 
-.card {
-    /* A flex-basis of 200px sets the starting width */
-    /* A flex-grow value of 1 allows the elements to evenly grow to fill the remaining space */
-    flex: 1 0 200px;
-    padding: 10px;
-    text-align: center;
-    border-style: solid;
-    border-width: 1px;
+.subh1 {
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    max-width: 60%;
+    margin: 2% 20% 5% 20%;
 }
 
-.card header {
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.code-card {
+    border: 3px solid whitesmoke;
+    margin: 2.5% 5% 2.5% 5%;
+    padding: 1em 1em 0em 1em;
+    width: 20%;
+    min-width: 450px;
+    height: 450px;
+    flex-wrap: wrap;
+}
+
+.code-card p {
+    color: rgba(232, 102, 236);
+    text-align: center;
+    font-size: 16px;
+}
+
+.card-header {
+    position: relative;
+    margin-top: -45px;
+    font-size: 32px;
+    -webkit-text-stroke-width: .25px;
+    -webkit-text-stroke-color: white;
+    color: rgba(232, 102, 236);
+    background-color: rgb(85, 85, 85);
+    text-align: center;
+    padding: 3px;
+}
+
+
+/* transitions*/
+
+.code-card .card-header {
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+.code-card:hover,
+.code-card .card-header {
+    box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
+}
+
+.codebox {
+    border-radius: 10px;
+    background-image: linear-gradient(rgba(232, 102, 236, 0.3) 0%, rgba(232, 102, 236, 0.6) 100%);
+    min-height: 175px;
+    align-items: flex-end;
+    padding: 5%;
+    margin-bottom: 0%;
+}
+
+div.codebox code pre {
+    position: center;
+    top: 50%;
+    right: 50%;
+    color: white;
+    font-size: 16px;
+}
+
+footer {
+    width: 100%;
+    bottom: 0;
     padding: 20px;
-    background: #13293d;
-    color: #fff;
-}
-
-.card.camera {
-    /* With a flex-grow value of 2, this element grows twice as wide as others */
-    /* The second value, flex-shrink, defines how the element will shrink if it can't fit */
-    flex: 2 1 200px;
+    text-align: center;
+    color: rgba(232, 102, 236);
+    margin-top: auto;
 }
