@@ -4,11 +4,19 @@ body {
 
 header {
     text-align: center;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 h1 {
     font-size: 46px;
     color: rgba(232, 102, 236);
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .subh1 {
@@ -16,6 +24,10 @@ h1 {
     color: rgb(255, 255, 255);
     max-width: 60%;
     margin: 2% 20% 5% 20%;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .container {
@@ -41,6 +53,10 @@ h1 {
     color: rgba(232, 102, 236);
     text-align: center;
     font-size: 16px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .card-header {
@@ -53,6 +69,10 @@ h1 {
     background-color: rgb(85, 85, 85);
     text-align: center;
     padding: 3px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 
@@ -83,6 +103,16 @@ div.codebox code pre {
     right: 50%;
     color: white;
     font-size: 16px;
+}
+
+
+/* Text selection true for code snippets*/
+
+.all {
+    -moz-user-select: all;
+    -webkit-user-select: all;
+    -ms-user-select: all;
+    user-select: all;
 }
 
 footer {
